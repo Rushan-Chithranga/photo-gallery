@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Gallery</title>
+    <style>
+      .image-container {
+        position: relative;
+      }
+
+      @media (max-width: 768px) {
+        .fixed-image {
+          position: none;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .fixed-image {
+          position: none;
+          top: 0;
+          left: 0;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .fixed-image {
+          position: none;
+          top: 0;
+          left: 0;
+        }
+      }
+      @media (min-width: 768px) and (min-width: 1024px) {
+        .fixed-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body >
+    <div class="container mx-auto my-5 py-5">
+      <h1
+        class="text-center md:text-center xl:text-left lg:text-left text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold mb-10"
+      >
+        Photo gallery
+      </h1>
+      <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2">
+        <div
+          class="col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-2 image-container"
+        >
+          <img
+            class="fixed-image h-full w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
+            alt=""
+          />
+        </div>
+        <div class="">
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+            alt=""
+          />
+        </div>
+        <div class="md:row-span-2 lg:row-span-2 xl:row-span-2 image-container">
+          <img
+            class="fixed-image h-full w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+            alt=""
+          />
+        </div>
+        <div class=" col-span-2 md:col-span-2 lg:col-span-1 xl:col-span-1 image-container">
+          <img
+            class="fixed-image h-full w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg"
+            alt=""
+          />
+        </div>
+        <div class="hidden lg:block xl:block"></div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg"
+            alt=""
+          />
+        </div>
+        <div class="hidden lg:block xl:block">
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
